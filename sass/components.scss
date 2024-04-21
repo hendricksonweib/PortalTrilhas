@@ -1,0 +1,24 @@
+@import url(colors.scss);
+
+$oragen-800: #FA4C05;
+$oragen-400: #FF7A00;
+$oragen-200: #FF8930;
+$gray-600:#5A5A5A;
+$gray-100:#6D6D6D;
+
+.inputComponent {
+    padding: 12px 20px;
+    width: 22vw;
+    border-radius: 2px;
+    border: 1px solid $gray-600;
+}
+
+.buttonComponent {
+    background-color: $oragen-400;
+    color: white;
+    border-style: none;
+    width: 22vw;
+    padding: 12px 20px;
+    border-radius: 2px;
+}
+

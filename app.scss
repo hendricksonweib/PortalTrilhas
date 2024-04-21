@@ -1,0 +1,75 @@
+@import url(sass/components.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$gray-100: #dfdfdf;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner {
+    @include flex;
+    height: 100vh;
+    gap: 50px;
+
+    .loginForms {
+        @include flex;
+        gap: 25px;
+        flex-direction: column;
+        flex: 1;
+        font-family: "Poppins", sans-serif;
+
+        .h1Forms {
+            display: flex;
+            text-align: start;
+        }
+
+        .division {
+            @include flex;
+            gap: 10px;
+            color: $gray-100;
+            font-size: small;
+            margin: 1.5rem 0rem;
+
+            .lineSpan {
+                background-color: $gray-100;
+                height: 2px;
+                width: 10vw
+            }
+        }
+
+        .googleAccounts {
+            @include flex;
+            gap: 10px;
+            width: 22vw;
+            padding: 12px 20px;
+            border-radius: 2px;
+            background-color: white;
+            font-size: larger;
+            font-weight: 100;
+
+            .icon {
+                height: 20px;
+            }
+        }
+
+        .imgLogo {
+            margin-top: 4rem;
+        }
+    }
+
+    .dadosLogin {
+        .dadosLoginImg {
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}

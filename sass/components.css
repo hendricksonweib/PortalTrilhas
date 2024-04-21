@@ -1,0 +1,16 @@
+@import url(colors.scss);
+.inputComponent {
+  padding: 12px 20px;
+  width: 22vw;
+  border-radius: 2px;
+  border: 1px solid #5A5A5A;
+}
+
+.buttonComponent {
+  background-color: #FF7A00;
+  color: white;
+  border-style: none;
+  width: 22vw;
+  padding: 12px 20px;
+  border-radius: 2px;
+}/*# sourceMappingURL=components.css.map */
