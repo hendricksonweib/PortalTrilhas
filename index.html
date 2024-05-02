@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/components.scss">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../sass/components.css">
+    <link rel="stylesheet" href="authentication/registro.css">
     <title>TRILHAS</title>
 </head>
 <body>
-    <div class="conteiner">
-        <form class="loginForms">
-            <h1 class="h1Forms">Login</h1>
-            <input class="inputComponent" id="emailInput" type="email" placeholder="Email">
-            <input class="inputComponent" id="passwordInput" type="password" placeholder="Senha">
-            <button class="buttonComponent" id="buttonLogin">Entrar</button>
-            <div class="division">
-                <span class="lineSpan"></span>
-                <p class="lineP">OU</p>
-                <span class="lineSpan"></span>
-            </div>
-            <button class="googleAccounts"><img class="icon" src="https://cdn-icons-png.flaticon.com/256/2875/2875404.png" alt="google" id="buttonLoginGoogle">Entrar com conta do Google</button>
-            <img class="imgLogo" src="img/logoInovaMaranhao.svg" alt="Inova Maranhão">
-        </form>
-        <aside class="dadosLogin">
-            <img class="dadosLoginImg" src="img/login.svg" alt="">
+    <div class="conteiner-cadastro">
+        <main class="cadastro-forms">
+            <h1>Cadastre-se</h1>
+            <input class="inputComponent" id="inputName" type="text" placeholder="Nome completo">
+            <input class="inputComponent" id="inputEmail" type="email" placeholder="Email">
+            <input class="inputComponent" id="InputCpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF" title="Digite um CPF válido" required>
+            <input class="inputComponent" id="inputTelefone" type="text" placeholder="Telefone" title="Digite um número de telefone válido" required>
+            <input class="inputComponent" id="inputEndereco" type="text" placeholder="Endereço">
+            <input class="inputComponent" id="inputCidade" type="text" placeholder="Cidade">
+            <input class="inputComponent" id="inputSenha" type="password" placeholder="Digite sua senha">
+            <input class="inputComponent" id="inputSenhaConfirma" type="password" placeholder="Confirma a sua senha">
+            <SECTION>
+                <DIV id="dropzone">
+                  <FORM class="dropzone needsclick" id="demo-upload" action="/upload">
+                    <DIV class="dz-message needsclick">    
+                      Drop files here or click to upload.<BR>
+                      <SPAN class="note needsclick">(This is just a demo dropzone. Selected 
+                      files are <STRONG>not</STRONG> actually uploaded.)</SPAN>
+                    </DIV>
+                  </FORM>
+                </DIV>
+              </SECTION>
+            <button class="buttonComponent" id="buttonEnviar">Enviar</button>
+            <!-- <input class="inputComponent" id="inputFile" accept="application/pdf" type="file"> -->
+        </main>
+        <aside class="cadastroCapa">
+            <img class="cadastroImg" src="../img/cadastro.svg" alt="cadastro">
         </aside>
     </div>
 </body>
-<script src="authentication/app.js"></script>
+<script src="authentication/registro.js"></script>
 </html>

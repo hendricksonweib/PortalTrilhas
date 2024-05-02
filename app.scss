@@ -14,7 +14,7 @@ $gray-100: #dfdfdf;
     justify-content: center;
 }
 
-.conteiner {
+.conteiner-login {
     @include flex;
     height: 100vh;
     gap: 50px;
@@ -61,7 +61,7 @@ $gray-100: #dfdfdf;
         }
 
         .imgLogo {
-            margin-top: 4rem;
+            margin-top: 1rem;
         }
     }
 
