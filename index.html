@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,47 @@
     <link rel="stylesheet" href="authentication/registro.css">
     <title>TRILHAS</title>
 </head>
+
 <body>
     <div class="conteiner-cadastro">
         <main class="cadastro-forms">
-            <h1>Cadastre-se</h1>
-            <input class="inputComponent" id="inputName" type="text" placeholder="Nome completo">
-            <input class="inputComponent" id="inputEmail" type="email" placeholder="Email">
-            <input class="inputComponent" id="InputCpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF" title="Digite um CPF válido" required>
-            <input class="inputComponent" id="inputTelefone" type="text" placeholder="Telefone" title="Digite um número de telefone válido" required>
-            <input class="inputComponent" id="inputEndereco" type="text" placeholder="Endereço">
-            <input class="inputComponent" id="inputCidade" type="text" placeholder="Cidade">
-            <input class="inputComponent" id="inputSenha" type="password" placeholder="Digite sua senha">
-            <input class="inputComponent" id="inputSenhaConfirma" type="password" placeholder="Confirma a sua senha">
-            <SECTION>
-                <DIV id="dropzone">
-                  <FORM class="dropzone needsclick" id="demo-upload" action="/upload">
-                    <DIV class="dz-message needsclick">    
-                      Drop files here or click to upload.<BR>
-                      <SPAN class="note needsclick">(This is just a demo dropzone. Selected 
-                      files are <STRONG>not</STRONG> actually uploaded.)</SPAN>
-                    </DIV>
-                  </FORM>
-                </DIV>
-              </SECTION>
+            <div class="group" id="userName">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>NOME COMPLETO</label>
+            </div>
+            <div class="group" id="UserEmail">
+                <input type="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>E-MAIL</label>
+            </div>
+            <div class="group" id="UserCPF">
+                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" inputmode="numeric" maxlength="14" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>CPF</label>
+            </div>
+            <div class="group" id="UserTelefone">
+                <input type="text" pattern="[0-9]*" inputmode="numeric" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>TELEFONE</label>
+            </div>            
+            <div class="group" id="UserSenha">
+                <input type="password" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>SENHA</label>
+            </div>
+            <div class="group" id="UserSenhaConfirm">
+                <input type="password" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>CONFIRME A SENHA</label>
+            </div>
             <button class="buttonComponent" id="buttonEnviar">Enviar</button>
-            <!-- <input class="inputComponent" id="inputFile" accept="application/pdf" type="file"> -->
         </main>
         <aside class="cadastroCapa">
             <img class="cadastroImg" src="../img/cadastro.svg" alt="cadastro">
@@ -39,4 +56,5 @@
     </div>
 </body>
 <script src="authentication/registro.js"></script>
+
 </html>

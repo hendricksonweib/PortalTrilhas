@@ -26,15 +26,4 @@
   height: 100vh;
   margin: 0px;
   padding: 0px;
-}
-.conteiner-cadastro .dropzone {
-  background: white;
-  border-radius: 5px;
-  border: 1px solid #5A5A5A;
-  -o-border-image: none;
-     border-image: none;
-  width: 22vw;
-  padding: 12px 20px;
-  margin-left: auto;
-  margin-right: auto;
 }/*# sourceMappingURL=registro.css.map */
