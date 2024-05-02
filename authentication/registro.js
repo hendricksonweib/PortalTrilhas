@@ -18,5 +18,29 @@ CadastrarButtom.addEventListener('click', () => {
         alert('preecha todos os campos')
     } else if (SenhaUsuario != ConfirmUsuario) {
         alert('suas senhas estão incompativeis')
-    } else alert('ok')
+    } else {
+        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+
+        listaUser.push(
+            {
+                nameCAD: Usuario,
+                emailCAD: EmailUsuario,
+                cpfCAD: CPFusuario,
+                telCAD: TelefoneUsuario,
+                senhaCAD: SenhaUsuario,
+                confCAD: ConfirmUsuario
+            }
+        )
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        clear()
+    }
 })
+
+const clear = () => {
+    UserName.value = ""
+    UserEmail.value = ""
+    UserCPF.value = ""
+    UserTelefone.value = ""
+    UserSenha.value = ""
+    UserSenhaConfirm.value = ""
+}
