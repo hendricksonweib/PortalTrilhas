@@ -12,6 +12,7 @@
 <body>
     <div class="conteiner-cadastro">
         <main class="cadastro-forms">
+            <h1 class="h1Forms">Cadastre-se</h1>
             <div class="group">
                 <input type="text" id="UserName" required>
                 <span class="highlight"></span>
@@ -25,13 +26,13 @@
                 <label>E-MAIL</label>
             </div>
             <div class="group">
-                <input type="text" id="UserCPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" inputmode="numeric" maxlength="14" required>
+                <input type="text" id="UserCPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>CPF</label>
-            </div>
+            </div>            
             <div class="group">
-                <input type="text" id="UserTelefone" pattern="[0-9]*" inputmode="numeric" required>
+                <input type="tel" id="UserTelefone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  inputmode="numeric" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>TELEFONE</label>
