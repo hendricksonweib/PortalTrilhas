@@ -1,11 +1,3 @@
-@import url(colors.scss);
-.inputComponent {
-  padding: 12px 20px;
-  width: 22vw;
-  border-radius: 2px;
-  border: 1px solid #5A5A5A;
-}
-
 .buttonComponent {
   background-color: #FF7A00;
   color: white;
@@ -13,4 +5,42 @@
   width: 22vw;
   padding: 12px 20px;
   border-radius: 2px;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 22vw;
+  border: none;
+  border-bottom: 1px solid #FF7A00;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #5A5A5A;
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  color: #FA4C05;
+  font-size: 12px;
 }/*# sourceMappingURL=components.css.map */

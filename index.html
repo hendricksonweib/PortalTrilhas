@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/components.scss">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../sass/components.css">
+    <link rel="stylesheet" href="authentication/registro.css">
     <title>TRILHAS</title>
 </head>
+
 <body>
-    <div class="conteiner">
-        <form class="loginForms">
-            <h1 class="h1Forms">Login</h1>
-            <input class="inputComponent" id="emailInput" type="email" placeholder="Email">
-            <input class="inputComponent" id="passwordInput" type="password" placeholder="Senha">
-            <button class="buttonComponent" id="buttonLogin">Entrar</button>
-            <div class="division">
-                <span class="lineSpan"></span>
-                <p class="lineP">OU</p>
-                <span class="lineSpan"></span>
+    <div class="conteiner-cadastro">
+        <main class="cadastro-forms">
+            <h1 class="h1Forms">Cadastre-se</h1>
+            <div class="group">
+                <input type="text" id="UserName" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>NOME COMPLETO</label>
             </div>
-            <button class="googleAccounts"><img class="icon" src="https://cdn-icons-png.flaticon.com/256/2875/2875404.png" alt="google" id="buttonLoginGoogle">Entrar com conta do Google</button>
-            <img class="imgLogo" src="img/logoInovaMaranhao.svg" alt="Inova Maranhão">
-        </form>
-        <aside class="dadosLogin">
-            <img class="dadosLoginImg" src="img/login.svg" alt="">
+            <div class="group">
+                <input type="email" id="UserEmail" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>E-MAIL</label>
+            </div>
+            <div class="group">
+                <input type="text" id="UserCPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>CPF</label>
+            </div>            
+            <div class="group">
+                <input type="tel" id="UserTelefone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  inputmode="numeric" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>TELEFONE</label>
+            </div>            
+            <div class="group">
+                <input type="password" id="UserSenha" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>SENHA</label>
+            </div>
+            <div class="group">
+                <input type="password" id="UserSenhaConfirm" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>CONFIRME A SENHA</label>
+            </div>
+            <button class="buttonComponent" id="buttonEnviar">Enviar</button>
+        </main>
+        <aside class="cadastroCapa">
+            <img class="cadastroImg" src="../img/cadastro.svg" alt="cadastro">
         </aside>
     </div>
 </body>
-<script src="authentication/app.js"></script>
+<script src="authentication/registro.js"></script>
+
 </html>

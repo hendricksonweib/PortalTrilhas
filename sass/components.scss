@@ -1,17 +1,8 @@
-@import url(colors.scss);
-
 $oragen-800: #FA4C05;
 $oragen-400: #FF7A00;
 $oragen-200: #FF8930;
-$gray-600:#5A5A5A;
-$gray-100:#6D6D6D;
-
-.inputComponent {
-    padding: 12px 20px;
-    width: 22vw;
-    border-radius: 2px;
-    border: 1px solid $gray-600;
-}
+$gray-600: #5A5A5A;
+$gray-100: #6D6D6D;
 
 .buttonComponent {
     background-color: $oragen-400;
@@ -22,3 +13,40 @@ $gray-100:#6D6D6D;
     border-radius: 2px;
 }
 
+.group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 22vw;
+    border: none;
+    border-bottom: 1px solid $oragen-400;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: $gray-600;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    color: $oragen-800;
+    font-size: 12px;
+}
