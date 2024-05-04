@@ -6,6 +6,8 @@ const UserSenha = document.getElementById('UserSenha')
 const UserSenhaConfirm = document.getElementById('UserSenhaConfirm')
 const CadastrarButtom = document.getElementById('buttonEnviar')
 
+
+
 CadastrarButtom.addEventListener('click', () => {
     let Usuario = UserName.value
     let EmailUsuario = UserEmail.value
