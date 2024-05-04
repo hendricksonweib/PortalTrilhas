@@ -47,4 +47,26 @@
   width: 70vw;
   border-radius: 15px;
   border: 3px solid #FF7A00;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome {
+    display: none;
+  }
+  .body-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .body-principal .logoGoverno {
+    margin: 2vw;
+    width: 250px;
+  }
+  .body-principal .subtitle-principal {
+    height: 10vh;
+    width: 70vw;
+    border-radius: 15px;
+    border: 3px solid #FF7A00;
+  }
 }/*# sourceMappingURL=Status.css.map */

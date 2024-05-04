@@ -73,3 +73,9 @@ $gray-100: #dfdfdf;
         }
     }
 }
+
+    @media only screen and (max-width: 768px) {
+        .dadosLogin{
+            display: none;
+        }
+    }

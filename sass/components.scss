@@ -50,3 +50,10 @@ input:valid~label {
     color: $oragen-800;
     font-size: 12px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    input {
+        width: 70vw;
+    }
+  }

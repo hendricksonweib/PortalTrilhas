@@ -2,6 +2,7 @@ const buttonLogin = document.getElementById('buttonLogin')
 const imputEmail = document.getElementById('UserEmail')
 const imputPassoword = document.getElementById('UserPassoword')
 
+
 buttonLogin.addEventListener('click', () => {
 
     const emailUser = imputEmail.value
@@ -28,6 +29,7 @@ buttonLogin.addEventListener('click', () => {
  if(emailUser == userValid.email && passwordUser == userValid.senha){
     let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2) 
     localStorage.setItem('token', token)
+    localStorage.setItem('userLogado',JSON.stringify(userValid))
     window.location.href ='http://127.0.0.1:5500/page/Status.html'
  }else {
     alert('deu ruim')
