@@ -35,12 +35,14 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ```
 
 
-## 🚀Quem proporcionou a execução desse projeto?
-O projeto foi desenvolvido durante o Programa Trilhas por:
+## 🚀FLUXOGRAMA PARA OS MENTORES
+
+
+```sh
+https://miro.com/app/board/uXjVKMfydSc=/?share_link_id=997300957214
+```
 
 <h4 align="start">
+O projeto foi desenvolvido durante o Programa Trilhas por:
 
-
- UX & UI DESIGNER:<a href="https://www.linkedin.com/in/samyra-ribeiro-rocha/"> Samyra Ribeiro </a><br />
- BACKEND DEVELORPER:  <a href="https://www.linkedin.com/in/arthurdevbackend/">Arthur Furtado </a><br />
  FRONTEND DEVELOPER: <a href="https://www.linkedin.com/in/hendrickson-weib/">Hendrickson Weib  </a>
