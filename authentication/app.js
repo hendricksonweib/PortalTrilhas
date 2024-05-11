@@ -1,7 +1,7 @@
 const buttonLogin = document.getElementById('buttonLogin')
 const imputEmail = document.getElementById('UserEmail')
 const imputPassoword = document.getElementById('UserPassoword')
-
+const errorAlert = document.getElementsById('alertError')
 
 buttonLogin.addEventListener('click', () => {
 
@@ -32,6 +32,6 @@ buttonLogin.addEventListener('click', () => {
     localStorage.setItem('userLogado',JSON.stringify(userValid))
     window.location.href ='http://127.0.0.1:5500/page/Status.html'
  }else {
-    alert('deu ruim')
+    alertErrorSpan.style.display = 'flex';
  }
 })

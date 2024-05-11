@@ -13,6 +13,9 @@
     <div class="conteiner-cadastro">
         <main class="cadastro-forms">
             <h1 class="h1Forms">Cadastre-se</h1>
+            <span class="alertError" id="alertErrorSpan"><h6>PREENCHA TODOS OS CAMPOS CORRETAMENTE</h6></span>
+            <span class="alertError" id="alertPassowordSpan"><h6>PREENCHA TODOS OS CAMPOS CORRETAMENTE</h6></span>
+            <span class="alertGood"><h6>Deu bom</h6></span>
             <div class="group">
                 <input type="text" id="UserName" required>
                 <span class="highlight"></span>
@@ -20,17 +23,18 @@
                 <label>NOME COMPLETO</label>
             </div>
             <div class="group">
-                <input type="email" id="UserEmail" required>
+                <input type="email" id="UserEmail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>E-MAIL</label>
-            </div>
+            </div>            
             <div class="group">
-                <input type="text" id="UserCPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required>
+                <input type="number" id="UserCPF" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" maxlength="14" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>CPF</label>
-            </div>            
+            </div>
+                       
             <div class="group">
                 <input type="tel" id="UserTelefone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  inputmode="numeric" required>
                 <span class="highlight"></span>

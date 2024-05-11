@@ -45,6 +45,26 @@ input:valid ~ label {
   font-size: 12px;
 }
 
+.alertError,
+.alertGood {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 22vw;
+  height: 5vh;
+  border-radius: 5px;
+  border-color: 20px solid #000000;
+  color: white;
+}
+
+.alertError {
+  background-color: rgba(250, 5, 5, 0.8666666667);
+}
+
+.alertGood {
+  background-color: rgba(70, 190, 84, 0.8666666667);
+}
+
 @media only screen and (max-width: 768px) {
   input {
     width: 70vw;

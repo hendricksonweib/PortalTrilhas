@@ -4,6 +4,12 @@ $oragen-200: #FF8930;
 $gray-600: #5A5A5A;
 $gray-100: #6D6D6D;
 
+@mixin flex {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 .buttonComponent {
     background-color: $oragen-400;
     color: white;
@@ -51,9 +57,26 @@ input:valid~label {
     font-size: 12px;
 }
 
+.alertError,
+.alertGood {
+    @include flex;
+    width: 22vw;
+    height: 5vh;
+    border-radius: 5px;
+    border-color: 20px solid #000000;
+    color: white;
+}
+
+.alertError {
+    background-color: #fa0505dd;
+}
+
+.alertGood {
+    background-color: #46be54dd;
+}
 
 @media only screen and (max-width: 768px) {
     input {
         width: 70vw;
     }
-  }
+}

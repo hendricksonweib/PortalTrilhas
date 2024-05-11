@@ -28,59 +28,77 @@ $oragen-800: #FA4C05;
         background-color: $oragen-400;
         height: 8vh;
 
-        .left-nav{
+        .title-nav {
+            height: 3rem;
+        }
+
+        .left-nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
         }
 
-        #logOut{
-            background-color:$oragen-400 ;
+        #logOut {
+            background-color: $oragen-400 ;
             color: white;
             padding: 5px;
             border-radius: 5px;
             border-style: none;
         }
-        
-        #logOut:hover{
-            background-color:$oragen-800 ;
+
+        #logOut:hover {
+            background-color: $oragen-800 ;
         }
     }
-    .body-principal{
+
+    .sidebar {
+        @include flex;
+        gap: 2rem;
+        margin: 1rem 0rem 5rem;
+
+        .pagesNav {
+            list-style: none;
+        }
+    }
+
+    .body-principal {
         @include flex;
         flex-direction: column;
-        .logoGoverno{
-            margin: 2vw;
-            width: 250px;
-        }
-        .subtitle-principal{
+
+        .subtitle-principal {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             height: 70vh;
             width: 70vw;
             border-radius: 15px;
-            border:3px solid $oragen-400;
+            border: 3px solid $oragen-400;
         }
-        
+
     }
 }
 
 @media only screen and (max-width: 768px) {
-.welcome{
-    display: none;
-}
-.body-principal{
-    @include flex;
-    flex-direction: column;
-    .logoGoverno{
-        margin: 2vw;
-        width: 250px;
+    .welcome {
+        display: none;
     }
-    .subtitle-principal{
-        height: 10vh;
-        width: 70vw;
-        border-radius: 15px;
-        border:3px solid $oragen-400;
+
+    .body-principal {
+        @include flex;
+        flex-direction: column;
+
+        .logoGoverno {
+            margin: 2vw;
+            width: 250px;
+        }
+
+        .subtitle-principal {
+            height: 10vh;
+            width: 70vw;
+            border-radius: 15px;
+            border: 3px solid $oragen-400;
+        }
+
     }
-    
-}
 }

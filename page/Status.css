@@ -16,6 +16,9 @@
   background-color: #FF7A00;
   height: 8vh;
 }
+.conteiner-principal .nav-principal .title-nav {
+  height: 3rem;
+}
 .conteiner-principal .nav-principal .left-nav {
   display: flex;
   align-items: center;
@@ -32,17 +35,26 @@
 .conteiner-principal .nav-principal #logOut:hover {
   background-color: #FA4C05;
 }
+.conteiner-principal .sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0rem 5rem;
+}
+.conteiner-principal .sidebar .pagesNav {
+  list-style: none;
+}
 .conteiner-principal .body-principal {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.conteiner-principal .body-principal .logoGoverno {
-  margin: 2vw;
-  width: 250px;
-}
 .conteiner-principal .body-principal .subtitle-principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   height: 70vh;
   width: 70vw;
   border-radius: 15px;
